@@ -24,6 +24,7 @@ header img {
   margin: 5px;
 }
 header label {
+  cursor: pointer;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -39,20 +40,14 @@ header label:hover div:nth-child(1) {
 header label:hover div:nth-child(3) {
   top: -3px;
 }
-header .burgernavanimation:hover div:nth-child(1) {
-  top: 11px;
-}
-header .burgernavanimation:hover div:nth-child(3) {
-  top: -11px;
-}
-header .burgernavanimation div:nth-child(1) {
+header .slidein .burgernavanimation div:nth-child(1) {
   top: 11px;
   transform: rotate(-45deg);
 }
-header .burgernavanimation div:nth-child(2) {
+header .slidein .burgernavanimation div:nth-child(2) {
   opacity: 0;
 }
-header .burgernavanimation div:nth-child(3) {
+header .slidein .burgernavanimation div:nth-child(3) {
   top: -11px;
   transform: rotate(45deg);
 }
