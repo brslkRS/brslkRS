@@ -88,9 +88,9 @@ header .slideout a {
   font-weight: bold;
   font-style: italic;
   text-decoration: none;
-  text-align: center;
-  vertical-align: middle;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 74px;
   opacity: 0;
   transition: opacity 750ms, transform 250ms;
