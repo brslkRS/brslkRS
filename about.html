@@ -10,12 +10,20 @@
     <link rel="icon" type="image/png" href="resim/favicon.png">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $(".burgernav").on('click', function(){
+        $(this).toggleClass("burgernavanimation");
+      });
+    });
+    </script>
   </head>
   <body>
     <header>
       <div class="slidein">
         <a href="index.html"><img src="resim/logo.png" draggable="false"></a>
-        <label for="checkbox">
+        <label for="checkbox" class="burgernav">
           <div></div>
           <div></div>
           <div></div>

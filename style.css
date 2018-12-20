@@ -89,7 +89,9 @@ header .slideout a {
   font-style: italic;
   text-decoration: none;
   text-align: center;
+  vertical-align: middle;
   display: block;
+  height: 74px;
   opacity: 0;
   transition: opacity 750ms, transform 250ms;
 }
