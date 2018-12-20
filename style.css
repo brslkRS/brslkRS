@@ -25,7 +25,7 @@ header img {
   transition: transform 250ms;
 }
 header img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 header label {
   cursor: pointer;
@@ -45,7 +45,7 @@ header label div {
   width: 30px;
   height: 3px;
   border-radius: 1px;
-  transition: top 250ms, transform 250ms, opacity 250ms;
+  transition: opacity 250ms, top 250ms, width 250ms,transform 250ms;
 }
 header label:hover div:nth-child(1) {
   top: 3px;
@@ -64,11 +64,14 @@ header .slidein .burgernavanimation div:nth-child(3) {
   top: -11px;
   transform: rotate(45deg);
 }
+header .slidein .burgernavanimation:hover div:nth-child(1) {
+  width: 33px;
+}
+header .slidein .burgernavanimation:hover div:nth-child(3) {
+  width: 33px;
+}
 header input {
   display: none;
-}
-header input:checked ~ .slideout {
-  top: 74px;
 }
 header .slideout {
   background-color: rgb(244, 67, 54);
@@ -87,6 +90,17 @@ header .slideout a {
   text-decoration: none;
   text-align: center;
   display: block;
+  opacity: 0;
+  transition: opacity 750ms, transform 250ms;
+}
+header .slideout a:hover {
+  transform: scale(1.05);
+}
+header input:checked ~ .slideout {
+  top: 74px;
+}
+header input:checked ~ .slideout a {
+  opacity: 1;
 }
 header::after {
   content: "";
