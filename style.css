@@ -22,6 +22,10 @@ header img {
   width: 64px;
   height: 64px;
   margin: 5px;
+  transition: transform 250ms;
+}
+header img:hover {
+  transform: scale(1.1);
 }
 header label {
   cursor: pointer;
@@ -33,6 +37,15 @@ header label {
   width: 33px;
   height: 33px;
   margin: 20.5px;
+}
+header label div {
+  background-color: white;
+  position: relative;
+  top: 0px;
+  width: 30px;
+  height: 3px;
+  border-radius: 1px;
+  transition: top 250ms, transform 250ms, opacity 250ms;
 }
 header label:hover div:nth-child(1) {
   top: 3px;
@@ -51,15 +64,6 @@ header .slidein .burgernavanimation div:nth-child(3) {
   top: -11px;
   transform: rotate(45deg);
 }
-header label div {
-  background-color: white;
-  position: relative;
-  top: 0px;
-  width: 30px;
-  height: 3px;
-  border-radius: 1px;
-  transition: top 250ms, transform 250ms, opacity 250ms;
-}
 header input {
   display: none;
 }
@@ -74,6 +78,16 @@ header .slideout {
   height: 222px;
   transition: top 250ms;
 }
+header .slideout a {
+  color: white;
+  font-family: Bungee, serif;
+  font-size: 29px;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
 header::after {
   content: "";
   display: block;
@@ -83,8 +97,8 @@ header::after {
 /*Content*/
 article {
   background-color: rgb(167, 219, 216);
-  padding: 50px;
   text-align: center;
+  padding: 50px;
 }
 article h1 {
   font-family: Bungee, serif;
@@ -97,8 +111,9 @@ article * {
 footer {
   background-color:rgb(20, 20, 30);
   color: rgb(255, 255, 255);
-  padding: 10px;
+  user-select: none;
   text-align: center;
+  padding: 10px;
 }
 footer * {
   margin: 0px;
