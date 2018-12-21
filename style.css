@@ -93,7 +93,7 @@ header .slideout a {
   align-items: center;
   height: 74px;
   opacity: 0;
-  transition: opacity 750ms, transform 250ms;
+  transition: opacity 250ms, transform 250ms;
 }
 header .slideout a:hover {
   transform: scale(1.05);
@@ -103,6 +103,7 @@ header input:checked ~ .slideout {
 }
 header input:checked ~ .slideout a {
   opacity: 1;
+  transition: opacity 750ms;
 }
 header::after {
   content: "";
@@ -125,7 +126,7 @@ article * {
 
 /*Footer*/
 footer {
-  background-color:rgb(20, 20, 30);
+  background-color: rgb(20, 20, 30);
   color: rgb(255, 255, 255);
   user-select: none;
   text-align: center;
