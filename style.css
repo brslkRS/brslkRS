@@ -131,10 +131,10 @@ article {
   flex-direction: column;
   padding: 25px 10px;
 }
-.about div {
+.about p {
   font-size: 18px;
 }
-.about div a {
+.about p a {
   color: rgb(0, 83, 104);
   text-decoration: none;
 }
