@@ -114,29 +114,37 @@ header::after {
 /*Content*/
 article {
   background-color: rgb(167, 219, 216);
-  text-align: center;
-  padding: 25px 10px;
   overflow: hidden;
+}
+.news {
+  padding: 10px;
+}
+.news h1 {
+  text-align: center;
+  font-family: Bungee;
+}
+.about {
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-.news h1 {
-  font-family: Bungee, serif;
-}
-.news div {
-  width: 100%;
-  height: 300px;
-  background-color: white;
-  border-radius: 5px;
-  margin: 10px;
+  padding: 25px 10px;
 }
 .about div {
   font-size: 18px;
 }
 .about div a {
   color: rgb(0, 83, 104);
+  text-decoration: none;
+}
+.contact {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px 10px;
 }
 .contact h3 {
   font-size: 20px;
