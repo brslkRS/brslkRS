@@ -119,6 +119,8 @@ article {
 .news div {
   overflow: hidden;
   padding: 10px;
+  max-width: 600px;
+  margin: auto;
 }
 .about {
   text-align: center;
