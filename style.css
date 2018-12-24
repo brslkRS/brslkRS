@@ -116,12 +116,9 @@ article {
   background-color: rgb(167, 219, 216);
   overflow: hidden;
 }
-.news {
+.news div {
+  overflow: hidden;
   padding: 10px;
-}
-.news h1 {
-  text-align: center;
-  font-family: Bungee;
 }
 .about {
   text-align: center;
