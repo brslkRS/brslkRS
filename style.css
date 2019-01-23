@@ -161,3 +161,17 @@ footer {
 footer * {
   margin: 0px;
 }
+
+/*Scroll*/
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(244, 67, 54);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(20, 20, 30);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(0, 0, 0);
+}
