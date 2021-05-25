@@ -3,7 +3,7 @@
 /*All*/
 body {
   background-color: rgb(53, 66, 74);
-  font-family: Helvetica, sans-serif;
+  font-family: Open Sans, Helvetica, sans-serif;
   margin: 0px;
 }
 
@@ -175,3 +175,11 @@ footer * {
 ::-webkit-scrollbar-thumb:hover {
   background-color: rgb(0, 0, 0);
 }
+
+/*Added*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+
+
+
